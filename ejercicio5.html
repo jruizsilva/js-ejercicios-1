@@ -13,8 +13,22 @@
       <h2>Calculadora Sencilla</h2>
       <div class="card">
         <a href="./index.html" class="btn">Inicio</a>
-        <input type="text" id="input" autocomplete="off" />
-        <ul id="list"></ul>
+
+        <form class="calculadoraForm">
+          <div class="left">
+            <input type="number" id="input1" autocomplete="off" required />
+            <input type="number" id="input2" autocomplete="off" required />
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn" id="btnPlus">+</button>
+            <button type="button" class="btn" id="btnSubtract">-</button>
+            <button type="button" class="btn" id="btnMultiply">*</button>
+            <button type="button" class="btn" id="btnSplit">/</button>
+            <button type="submit" class="btn" id="btnCalculate">=</button>
+          </div>
+        </form>
+
+        <h3 id="resultadoCalculadora"></h3>
       </div>
     </main>
     <script src="./src/js/ejercicio5.js" type="module"></script>
