@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicios-js-7</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Ejercicio 7</h1>
+      <h2>Generador de Contraseñas Aleatorias</h2>
+      <div class="card">
+        <a href="./index.html" class="btn">Inicio</a>
+
+        <form id="formGeneratePassword">
+          <div class="box-group">
+            <label for="passwordLength">Longitud de la contraseña: </label>
+            <input
+              type="number"
+              name="passwordLength"
+              id="passwordLength"
+              min="4"
+            />
+          </div>
+          <br />
+          <button type="submit" class="btn">Generar contraseña</button>
+        </form>
+
+        <h3 id="passwordGenerated"></h3>
+      </div>
+    </main>
+    <script src="./src/js/ejercicio7.js" type="module"></script>
+  </body>
+</html>
