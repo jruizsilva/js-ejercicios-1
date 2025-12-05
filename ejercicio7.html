@@ -15,15 +15,23 @@
         <a href="./index.html" class="btn">Inicio</a>
 
         <form id="formGeneratePassword">
-          <div class="box-group">
-            <label for="passwordLength">Longitud de la contraseña: </label>
+          <div
+            style="
+              text-align: left;
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+            "
+          >
+            <label for="passwordLength">Longitud de la contraseña </label>
             <input
               type="number"
               name="passwordLength"
               id="passwordLength"
-              min="4"
+              placeholder="Ingrese la longitud de la contraseña"
             />
           </div>
+
           <br />
           <button type="submit" class="btn">Generar contraseña</button>
         </form>
